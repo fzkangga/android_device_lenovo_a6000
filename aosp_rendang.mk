@@ -31,12 +31,11 @@ PRODUCT_BRAND := Smartfren
 PRODUCT_MODEL := Andromax G36C1H
 PRODUCT_MANUFACTURER := Haier
 
-# Device Identifiers
-PRODUCT_PROPERTY_OVERRIDES += \
-     ro.build.product=G36C1H
-
-# GMS
 PRODUCT_GMS_CLIENTID_BASE := android-haier
+
+TARGET_VENDOR_PRODUCT_NAME := G36C1H
+TARGET_VENDOR_DEVICE_NAME := G36C1H
+PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=G36C1H PRODUCT_NAME=G36C1H
 
 # Animation
 PRODUCT_COPY_FILES += device/smartfren/rendang/bootanimation.zip:system/media/bootanimation.zip
