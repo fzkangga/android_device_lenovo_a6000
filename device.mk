@@ -339,7 +339,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.a6000
+    android.hardware.light@2.0-service.rendang
 
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -495,4 +495,4 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.usb.id.ums_adb=2285 \
     ro.usb.vid=2970
 
-$(call inherit-product, vendor/lenovo/a6000/a6000-vendor.mk)
+$(call inherit-product, vendor/smartfren/rendang/rendang-vendor.mk)
