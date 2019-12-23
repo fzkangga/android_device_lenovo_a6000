@@ -154,12 +154,12 @@ USE_DEVICE_SPECIFIC_GPS := true
 SELINUX_IGNORE_NEVERALLOWS := true
 
 # SEpolicy
-# BOARD_SEPOLICY_DIRS += \
-#    $(PLATFORM_PATH)/sepolicy
+BOARD_SEPOLICY_DIRS += \
+    $(PLATFORM_PATH)/sepolicy
 
 # Qcom Sepolicy
-# include device/qcom/sepolicy/sepolicy.mk
-# include device/qcom/sepolicy/legacy-sepolicy.mk
+include device/qcom/sepolicy/sepolicy.mk
+include device/qcom/sepolicy/legacy-sepolicy.mk
 
 # Wi-Fi
 BOARD_HAS_QCOM_WLAN := true
